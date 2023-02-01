@@ -1,0 +1,18 @@
+
+/*img
+{
+	height:200px;
+	width:200px;
+}*/
+@media (min-width: 768px)
+{
+.container
+ {
+	width: 900px;
+ }
+ .container .row .col-md-8 img
+ {
+ 	width:500px;
+ 	height:500px;
+ }
+}
