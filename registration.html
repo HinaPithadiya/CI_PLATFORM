@@ -7,9 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/notosans_light_font.css">
 	<link rel="stylesheet" type="text/css" href="css/notosans_regular_font.css">
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/forgot_password_style.css">
+	<link rel="stylesheet" type="text/css" href="css/registration_style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Forgot Password</title>
+	<title>Registration</title>
 </head>
 <body>
 	<div class="container-fluid">
@@ -17,8 +17,7 @@
 			<div class="col-md-8">
 			<!-- 	<img class="img-fluid" class="img1" src="images/login.png" alt=""> -->
 
-
-      <div class="slideshow-container">
+				<div class="slideshow-container">
 
           <div class="mySlides fade">
               <div class="numbertext">1 / 4</div>
@@ -117,15 +116,23 @@
     </script>
 
       </div> 
-
 			<div class="col-md-4">
 				<form>
-					<h3 class="text-align-c">Forgot Password</h3>
-					<label class="text-align-c">Enter your email address you've using for your account below and we will send you a password reset link</label>
-					<label class="text-align-l">Email Address</label>
-					<input  type="email" name="email" class="form-control text-align-c">
-					<button class="reset_btn text-align-c">Reset my Password</button><br>
-					<a href="login.html" class="login_btn">Login</a>
+					<label class="text-align-l">First Name</label>
+					<input  type="text" name="firstname" class="form-control text-align-c">
+          <label class="text-align-l">Last Name</label>
+          <input  type="text" name="lastname" class="form-control text-align-c">
+          <label class="text-align-l">Phone Number</label>
+          <input  type="text" name="phoneno" class="form-control text-align-c">
+          <label class="text-align-l">Email Address</label>
+          <input  type="email" name="email" class="form-control text-align-c">
+          <label class="text-align-l">Password</label>
+          <input  type="password" name="password" class="form-control text-align-c">
+          <label class="text-align-l">Confrim Password</label>
+          <input  type="password" name="c_password" class="form-control text-align-c">
+					<button class="register_btn text-align-c">Register</button><br>
+					<a href="forgot_password.html" class="forgot_link text-align-c">Lost your password?</a><br>
+          <div class="text-align-c"><label class="">Already Registered?</label><a href="login.html" > Login Now</a></div>
 					<div class="font_color privacy-margin text-align-c"><center>Privacy Policy</center></div>
 				</form>
 			</div>

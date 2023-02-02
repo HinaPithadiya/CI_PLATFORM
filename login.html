@@ -1,4 +1,161 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/notosans_font.css">
+    <link rel="stylesheet" type="text/css" href="css/notosans_light_font.css">
+    <link rel="stylesheet" type="text/css" href="css/notosans_regular_font.css">
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Login</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- <img class="img-fluid" src="images/login.png" alt=""> -->
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text">
+                    <h2>Sed ut perspiciatis unde omnis</h2><h2>iste natus voluptaem.</h2>Lorem ipsum dolor  sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                    nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                    consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                    expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                    inventore tempora libero?
+                  <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span> 
+                  </div>
+              </div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text">
+                  <h2>Sed ut perspiciatis unde omnis</h2><h2>iste natus voluptaem.</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                  nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                  consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                  expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                  inventore tempora libero?
+                  <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span> 
+                  </div>
+                </div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text">
+                  <h2>Sed ut perspiciatis unde omnis</h2><h2>iste natus voluptaem.</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                  nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                  consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                  expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                  inventore tempora libero?
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span> 
+                </div>
+               </div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+                <div class="text"><h2>Sed ut perspiciatis unde omnis</h2><h2>iste natus voluptaem.</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                inventore tempora libero?
+                  <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span> 
+                  </div>
+                </div>
+            </div>
+            
+      </div>
+<br>
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+      </div>  
+      <div class="col-md-4">
+        <form>
+          <label>Email Address</label><input type="email" name="email" class="form-control text-align-c">
+          <label>Password</label><input type="Password" name="password" class="form-control text-align-c">
+          <button class="text-align-c">Login</button>
+          <div class="font_color text-align-c"><a class="text-decoration " href="forgot_password.html" >Lost your password?</a></div>
+          <div class="font_color text-align-c">Don't have an account? <span><a class="text-decoration" href="">Create an account</a></span></div>
+          <div class="font_color text-align-c">Privacy Policy</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -13,72 +170,118 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-8">
-				<!-- <img class="img-fluid" src="images/login.png" alt=""> -->
+		<div class="row" >
+    
+			 <div class="col-md-8" style="height: 100%;">
+				
 
 				<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/login.png" style="width:100%">
-  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
-                                    nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
-                                    consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
-                                    expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
-                                    inventore tempora libero?</div>
-</div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img class="img-fluid"src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="height:100%">
+              <div class="text"><h1>Sed ut prespiciatis unde omnis</h1><h1> iste natus voluptatem.</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                                nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                                consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                                expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                                inventore tempora libero?
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/login.png" style="width:100%">
-  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
-                                    nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
-                                    consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
-                                    expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
-                                    inventore tempora libero?</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/login.png" style="width:100%">
-  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
-                                    nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
-                                    consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
-                                    expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
-                                    inventore tempora libero?</div>
-</div>
-	<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-</div>
-<br>
+                <div class="z-index"style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>  
+            </div>
 
 
+              </div>
+            </div>
 
-<script>
-let slideIndex = 0;
-showSlides();
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text"><h1>Sed ut prespiciatis unde omnis</h1><h1> iste natus voluptatem.</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                                                nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                                                consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                                                expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                                                inventore tempora libero?
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+                <div class="z-index"style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text"><h1>Sed ut prespiciatis unde omnis </h1><h1>iste natus voluptatem.</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                                                nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                                                consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                                                expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                                                inventore tempora libero?
+
+              <div class="z-index]]"style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+              </div>
+            </div>
+
+              <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" style="width:100%">
+              <div class="text"><h1>Sed ut prespiciatis unde omnis </h1><h1>iste natus voluptatem.</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quia, saepe vel
+                                                nulla, praesentium, atque nobis veniam aut cumque deserunt illum corporis ex ab
+                                                consectetur impedit quam dolores? Cupiditate voluptatem totam suscipit nemo. Adipisci
+                                                expedita, explicabo at porro minima corrupti? Ab non a quae voluptas, reprehenderit
+                                                inventore tempora libero?
+
+              <div class="z-index"style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>
+
+              </div>
+            </div>
+            	
+            </div>
+           
+            <br>
+
+
+
+            <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
 
 
 			</div>	
@@ -95,4 +298,4 @@ function showSlides() {
 		</div>
 	</div>
 </body>
-</html>
+</html> -->
